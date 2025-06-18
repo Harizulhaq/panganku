@@ -1,0 +1,175 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Marketplace</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    </head>
+
+    <body class="bg-gray-50">
+
+
+<!-- Navigasi -->
+<nav class="flex items-center justify-between bg-white px-6 py-4 shadow w-full gap-4">
+    <!-- Logo -->
+     <img src="2.svg" alt="Logo" class="h-20 w-auto">
+
+    <!-- Search bar full width -->
+    <div class="flex-1 relative mx-4">
+        <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+        <input type="text" 
+            placeholder="Cari toko dan bahan pangan anda" 
+            class="w-full pl-10 pr-4 py-2 border rounded-full shadow-sm" />
+    </div>
+
+    <!-- Setelah login -->
+    <div class="flex items-center space-x-4 whitespace-nowrap ">    
+        <div class="mr-5">
+            <i class="fa-solid fa-cart-shopping fa-lg"></i>
+        </div>
+        <button class="text-gray-700 hover:text-green-600 flex items-center">
+                <span class="w-10 h-10 rounded-full border flex items-center justify-center mr-3">
+            <i class="fa-solid fa-user fa-lg"></i>
+            </span>
+        Akun Saya
+        </button>
+
+
+    </div>
+</nav>
+
+<!-- Banner -->
+<div class="bg-green-900 text-white text-center py-5 px-6">
+    <h1 class="text-2xl font-bold mb-4">Cari kebutuhan pangan mu disini</h1>
+    <button class="bg-yellow-400 hover:bg-yellow-500 text-green-900 font-semibold px-6 py-2 rounded-full">
+        Klaim diskon sekarang
+    </button>
+    <p class="text-sm mt-2">*berlaku untuk 3 orders pertama syarat dan ketetuan berlaku.</p>
+</div>
+
+
+        <!-- Section: Toko Diskon -->
+    <section class="px-6 py-8">
+    <h2 class="text-xl font-semibold mb-4">Toko yang sedang diskon</h2>
+
+    <!-- Responsive Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+        
+        <!-- Card 1 -->
+        <div class="bg-white hover:bg-gray-100 shadow-md rounded-md p-4 text-center w-40 h-60 mx-auto">
+        <img src="catalog/Ts1.png" alt="toko pak yu" class="h-24 w-auto mx-auto mb-2">
+        <div class="min-h-[2.5rem]">
+            <p class="font-medium break-words">Toko klontong pak yu</p>
+        </div>
+        <p class="text-sm text-gray-500">By 1:30pm</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white hover:bg-gray-100 shadow-md rounded-md p-4 text-center w-40 h-60 mx-auto">
+        <img src="catalog/ikan.jpg" alt="ikan pak man" class="h-24 w-auto mx-auto mb-2">
+        <div class="min-h-[2.5rem]">
+            <p class="font-medium break-words">Ikan segar pak man</p>
+        </div>
+        <p class="text-sm text-gray-500">By 1:30pm</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white hover:bg-gray-100 shadow-md rounded-md p-4 text-center w-40 h-60 mx-auto">
+        <img src="catalog/ikan.jpg" alt="ikan pak man" class="h-24 w-auto mx-auto mb-2">
+        <div class="min-h-[2.5rem]">
+            <p class="font-medium break-words">Ikan segar pak rusdi</p>
+        </div>
+        <p class="text-sm text-gray-500">By 1:30pm</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white hover:bg-gray-100 shadow-md rounded-md p-4 text-center w-40 h-60 mx-auto">
+        <img src="catalog/buah.jpg" alt="ikan pak man" class="h-24 w-auto mx-auto mb-2">
+        <div class="min-h-[2.5rem]">
+            <p class="font-medium break-words">Toko buah fruits</p>
+        </div>
+        <p class="text-sm text-gray-500">By 1:30pm</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white hover:bg-gray-100 shadow-md rounded-md p-4 text-center w-40 h-60 mx-auto">
+        <img src="catalog/tomat.jpg" alt="ikan pak man" class="h-24 w-auto mx-auto mb-2">
+        <div class="min-h-[2.5rem]">
+            <p class="font-medium break-words">Tomat pak mat</p>
+        </div>
+        <p class="text-sm text-gray-500">By 1:55pm</p>
+        </div>
+
+        <!-- Tambahkan lebih banyak kartu di sini jika diperlukan -->
+
+    </div>
+    </section>
+
+
+    <!-- Filter toko mya-->
+    <section class="px-6">
+        <h2 class="text-xl font-semibold mb-4">semua toko di <span class="text-green-600">sleman</span></h2>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <button class="bg-gray-200 px-4 py-1 rounded-full border border-transparent hover:bg-gray-300 hover:border-green-600 ">Semua</button>
+            <button class="bg-gray-200 px-4 py-1 rounded-full border border-transparent hover:bg-gray-300 hover:border-green-600 ">Termurah</button>
+            <button class="bg-gray-200 px-4 py-1 rounded-full border border-transparent hover:bg-gray-300 hover:border-green-600">Terlengkap</button>
+            <button class="bg-gray-200 px-4 py-1 rounded-full border border-transparent hover:bg-gray-300 hover:border-green-600">Terdekat</button>
+        </div>
+
+    </section>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+        
+        <!-- Card 1 -->
+        <div class="bg-white hover:bg-gray-100 shadow-md rounded-md p-4 text-center w-40 h-60 mx-auto">
+        <img src="catalog/Ts1.png" alt="toko pak yu" class="h-24 w-auto mx-auto mb-2">
+        <div class="min-h-[2.5rem]">
+            <p class="font-medium break-words">Toko klontong pak yu</p>
+        </div>
+        <p class="text-sm text-gray-500">By 1:30pm</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white hover:bg-gray-100 shadow-md rounded-md p-4 text-center w-40 h-60 mx-auto">
+        <img src="catalog/ikan.jpg" alt="ikan pak man" class="h-24 w-auto mx-auto mb-2">
+        <div class="min-h-[2.5rem]">
+            <p class="font-medium break-words">Ikan segar pak man</p>
+        </div>
+        <p class="text-sm text-gray-500">By 1:30pm</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white hover:bg-gray-100 shadow-md rounded-md p-4 text-center w-40 h-60 mx-auto">
+        <img src="catalog/ikan.jpg" alt="ikan pak man" class="h-24 w-auto mx-auto mb-2">
+        <div class="min-h-[2.5rem]">
+            <p class="font-medium break-words">Ikan segar pak rusdi</p>
+        </div>
+        <p class="text-sm text-gray-500">By 1:30pm</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white hover:bg-gray-100 shadow-md rounded-md p-4 text-center w-40 h-60 mx-auto">
+        <img src="catalog/buah.jpg" alt="ikan pak man" class="h-24 w-auto mx-auto mb-2">
+        <div class="min-h-[2.5rem]">
+            <p class="font-medium break-words">Toko buah fruits</p>
+        </div>
+        <p class="text-sm text-gray-500">By 1:30pm</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white hover:bg-gray-100 shadow-md rounded-md p-4 text-center w-40 h-60 mx-auto">
+        <img src="catalog/tomat.jpg" alt="ikan pak man" class="h-24 w-auto mx-auto mb-2">
+        <div class="min-h-[2.5rem]">
+            <p class="font-medium break-words">Tomat pak mat</p>
+        </div>
+        <p class="text-sm text-gray-500">By 1:55pm</p>
+        </div>
+
+        <!-- Tambahkan lebih banyak kartu di sini jika diperlukan -->
+
+    </div>
+    </section>
+</body>
+</html>

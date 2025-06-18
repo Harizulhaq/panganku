@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <div class="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+    <div class="w-full max-w-md bg-white p-6 rounded-xl shadow-md relative">
+      <!-- Tombol Back -->
+      <a href="Bahan_Pokok.html" class="absolute left-4 top-4 text-gray-600 hover:text-gray-800">
+        <i class="fas fa-arrow-left"></i> Back
+      </a>
+
+      <div class="flex justify-end">
+        <a href="signup.html" class="text-sm text-gray-600 border px-3 py-1 rounded-full hover:bg-gray-100">
+          SignUp
+        </a>
+      </div>
+
+      <h2 class="text-2xl font-bold text-center mt-2">Sign in</h2>
+      <p class="text-center text-green-600 text-xs mt-1">Service fees and terms apply</p>
+
+      <div class="mt-6 space-y-3">
+        <button class="w-full flex items-center justify-center gap-2 border rounded-full px-4 py-2 hover:bg-gray-50">
+          <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="h-5 w-5" />
+          Continue with Google
+        </button>
+        <button class="w-full flex items-center justify-center gap-2 border rounded-full px-4 py-2 hover:bg-gray-50">
+          <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="Facebook" class="h-5 w-5" />
+          Continue with Facebook
+        </button>
+      </div>
+
+      <div class="flex items-center my-4">
+        <hr class="flex-grow border-t" />
+        <span class="mx-3 text-gray-400 text-sm">or</span>
+        <hr class="flex-grow border-t" />
+      </div>
+
+      <!-- Tambahkan tag form -->
+      <form action="controller/login_process.php" method="POST" class="space-y-3 mt-6">
+        <input type="email" name="email" placeholder="Email Address" required class="w-full border rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring focus:border-green-500" />
+        <input type="password" name="password" placeholder="Password (min 8 characters)" minlength="8" required class="w-full border rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring focus:border-green-500" />
+        
+        <button type="submit" class="mt-4 w-full bg-green-600 text-white rounded-full py-2 font-semibold hover:bg-green-700">
+          Continue
+        </button>
+      </form>
+
+
+      <p class="text-xs text-gray-600 mt-3">
+        By continuing, you agree to our 
+        <a href="#" class="text-green-600 underline">Terms of Service</a> & 
+        <a href="#" class="text-green-600 underline">Privacy Policy</a>.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
